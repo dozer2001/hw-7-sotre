@@ -110,4 +110,7 @@ header .top-header .phones-list li span.custom-icon{
     -webkit-border-radius: 1em;
             border-radius: 1em;
 }
+.icon-lable{
+    position: relative;
+}
 /* HEADER END*/

@@ -99,4 +99,7 @@ header .top-header .phones-list li span.custom-icon{
     right: 0.1px;
     border-radius: 1em;
 }
+.icon-lable{
+    position: relative;
+}
 /* HEADER END*/
