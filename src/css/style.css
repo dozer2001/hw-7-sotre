@@ -1,0 +1,102 @@
+
+/* RESET START*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #34404b;
+    font: 12px/1 "Harmonia_regular", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+textarea{
+    resize: vertical;
+}
+input, textarea, button{
+    outline: none;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+
+
+/* RESET END*/
+
+/*DEFAULT CLASSES START*/
+.flex-container{
+    display: flex;
+}
+.align-canter{
+    align-items: center;
+}
+.justify-sp-between{
+    justify-content: space-between;
+}
+/*DEFAULT CLASSES END*/
+
+/* DEFAUL COMPANENT START*/
+.custom-icon{
+    display: inline-block;
+}
+header .top-header{
+    border-bottom: 1px solid #edeff1;
+    padding: 20px 0;
+}
+header .top-header .phones-list li + li{
+    margin-left: 20px;
+}
+header .top-header .phones-list li span.custom-icon{
+    margin-right: 10px;
+}
+.social-nav a{
+    padding-left: 10px;
+}
+.bootom-header{
+    margin-top: 50px;
+}
+.header-nav{
+    margin-left: 45px;
+}
+.header-icon{
+    margin-left: auto
+}
+.header-icon    ul li+li{
+    margin-left: 20px;
+}
+/* DEFAUL COMPANENT END*/
+
+/* ALL STYLES START*/
+
+/* ALL STYLES END*/
+
+
+
+/* HEADER START*/
+.header-nav ul {
+    font-size: 18px;
+}
+.header-nav ul li+li{
+    margin-left: 30px;
+}
+.label{
+    position: absolute;
+    top: -13px;
+    right: 0.1px;
+    border-radius: 1em;
+}
+/* HEADER END*/
