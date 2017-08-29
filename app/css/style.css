@@ -197,11 +197,12 @@ header .top-header .phones-list li span.custom-icon{
     text-align: center
 }
 .circle{
-    background-color: orange;
+    background-color: #ff5912;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     width: 10px;
     height: 10px;
     display: inline-block;
+    margin-left: 5px;
 }
 /*MEAIN END*/
