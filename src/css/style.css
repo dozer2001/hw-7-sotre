@@ -99,7 +99,10 @@ header .top-header .phones-list li span.custom-icon{
     right: 0.1px;
     border-radius: 1em;
 }
-.icon-lable{
+.header-icon .icon-lable{
     position: relative;
+}
+.header-icon .heder-bot-icon{
+    align-items: center;
 }
 /* HEADER END*/
