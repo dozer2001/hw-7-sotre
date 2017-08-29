@@ -7,6 +7,7 @@ body{
     margin: 0;
     color: #34404b;
     font: 12px/1 "Harmonia_regular", sans-serif;
+    background-color: #f4f6f8;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -47,11 +48,23 @@ button{
 .justify-sp-between{
     justify-content: space-between;
 }
+.orange-text{
+    color: #ff5912;
+}
 /*DEFAULT CLASSES END*/
 
 /* DEFAUL COMPANENT START*/
 .custom-icon{
     display: inline-block;
+}
+.title{
+    font-family: 'Harmonia_black';
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.title.big{
+    font-size: 52px;
 }
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -106,3 +119,28 @@ header .top-header .phones-list li span.custom-icon{
     align-items: center;
 }
 /* HEADER END*/
+
+/* MEIN START*/
+.main-content .content-text span{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.main-content .content-text p{
+    margin-top: 18px;
+    font-size: 16px;
+    font-family: 'Harmonia_regular';
+}
+.content-price{
+    margin-top: 68px;
+}
+.content-price ul li+li{
+    margin-left: 34px;
+}
+.content-price ul li a{
+    padding-left: 14px;
+}
+.items-carousel{
+    min-height: 650px;
+    background: url("../img/content-bg.jpg") no-repeat center / cover;
+}
+/*MEAIN END*/
