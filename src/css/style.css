@@ -203,12 +203,6 @@ header .top-header .phones-list li span.custom-icon{
 .
 /* DEFAUL COMPANENT END*/
 
-/* ALL STYLES START*/
-
-/* ALL STYLES END*/
-
-
-
 /* HEADER START*/
 .header-nav ul {
     font-size: 18px;
@@ -270,6 +264,8 @@ header .top-header .phones-list li span.custom-icon{
     padding: 26px 20px;
     text-align: center;
     margin-bottom: 100px;
+    max-width: 1166px;
+    margin: auto;
 }
 .circle{
     background-color: #ff5912;
@@ -333,6 +329,12 @@ header .top-header .phones-list li span.custom-icon{
 .price-cost{
     font-size: 20px;
     margin-left: 29px
+}
+.sales{
+    text-align: center;
+}
+.sales span{
+   margin-right: 12px;
 }
 
 /*MEAIN END*/
