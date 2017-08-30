@@ -63,6 +63,15 @@ button{
 .green-bg{
     background-color: #2fd967;
 }
+.wite-bg{
+    background-color: #fff;
+}
+.light-orange-bg{
+    background-color: #ff9060;
+}
+.orange-bg{
+    background-color: #ff5912;
+}
 /*DEFAULT CLASSES END*/
 
 /* DEFAUL COMPANENT START*/
@@ -140,12 +149,7 @@ button{
 .more-info-on-hover .item-controls li + li{
     margin-left: 30px;
 }
-.light-orange-bg{
-    background-color: #ff9060;
-}
-.orange-bg{
-    background-color: #ff5912;
-}
+
 .item:hover .more-info-on-hover{
     opacity: 1;
 }
@@ -196,6 +200,7 @@ header .top-header .phones-list li span.custom-icon{
 .header-icon    ul li+li{
     margin-left: 20px;
 }
+.
 /* DEFAUL COMPANENT END*/
 
 /* ALL STYLES START*/
@@ -263,7 +268,8 @@ header .top-header .phones-list li span.custom-icon{
 .load-more{
     background-color: #ffffff;
     padding: 26px 20px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 100px;
 }
 .circle{
     background-color: #ff5912;
@@ -273,17 +279,60 @@ header .top-header .phones-list li span.custom-icon{
     display: inline-block;
     margin-left: 5px;
 }
-.square {
-    width: 48px;
-    height: 48px;
-    background: #ff5912;
-    transform: rotate(45deg);
-    display: inline-block;
+.winter-title{
+    font-size: 22px;
 }
 .full-content{
     display: inline-block;
+    margin-top: 33px;
 }
 .content-full{
     display: block;
+    margin-top: 20px;
 }
+.kit{
+    padding: 10px 60px;
+    margin-top: 10px
+}
+
+.sales-block{
+    position: relative;
+}
+.sales-block > div{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+}
+.sales-block div:first-child{
+    transform: rotate(45deg);
+}
+.sales-block div:last-child{
+    transform: rotate(-45deg);
+    position: absolute;
+    left:0;
+}
+.adv-area{
+    margin-top: 33px;
+}
+.adv-area span{
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+.adv-area span+span{
+    margin-left: 6px;
+}
+.adv-area p{
+    color: rgba(67, 82, 93, 0.6);
+    font-size: 12px;
+    letter-spacing: 1em;
+    margin-top: 18px;
+}
+.price{
+    margin-top: 33px
+}
+.price-cost{
+    font-size: 20px;
+    margin-left: 29px
+}
+
 /*MEAIN END*/
