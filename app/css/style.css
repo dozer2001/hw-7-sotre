@@ -273,6 +273,9 @@ header .top-header .phones-list li span.custom-icon{
 .header-nav ul li+li{
     margin-left: 30px;
 }
+.header-nav ul li:hover{
+    color: #ff5912;
+}
 .label{
     position: absolute;
     top: -13px;
@@ -423,6 +426,27 @@ header .top-header .phones-list li span.custom-icon{
 }
 .sales span{
    margin-right: 12px;
+}
+.jacket-img{
+    margin: 30px;
+}
+.jacket-desc{
+    margin: auto;
+}
+.jacket-name{
+    font-size: 16px;
+    font-family: 'Harmonia_semibold';
+}
+.item-review{
+    margin-top: 35px;
+}
+.jacket-price{
+    font-size: 16px;
+    font-family: 'Harmonia_semibold';
+    color: #ff5912;
+}
+.star-icon{
+    color: #ff5912;
 }
 .subscribe-description span+span{
     margin-left: 40px;
