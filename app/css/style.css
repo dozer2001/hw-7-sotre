@@ -17,6 +17,7 @@ ul, ol{
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Harmonia_regular';
 }
 a, a:hover{
     color: inherit;
@@ -104,6 +105,31 @@ button{
     color: #495662;
     margin-bottom: 70px;
 }
+.checkbox-group input[type=checkbox]{
+    display: none;
+}
+.checkbox-group label{
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+    margin-bottom: 40px
+}
+.checkbox-group label::before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #cdf0f2;
+    background-color: #cdf0f2;
+    margin-right: 13px;
+}
+.checkbox-group input[type=checkbox]:checked + label{
+    color: #ff5912;
+}
+.checkbox-group input[type=checkbox]:checked + label::before{
+    border-color: #ff5912;
+}
+
 .item{
     background-color: #fff;
     padding: 30px 10px;
@@ -307,6 +333,7 @@ header .top-header .phones-list li span.custom-icon{
     margin-bottom: 100px;
     max-width: 1150px;
     margin: auto;
+    margin-bottom: 60px;
 }
 .circle{
     background-color: #ff5912;
@@ -323,6 +350,7 @@ header .top-header .phones-list li span.custom-icon{
 .full-content{
     display: inline-block;
     padding-left: 45px;
+    margin: auto;
 }
 .content-full{
     display: block;
@@ -330,12 +358,14 @@ header .top-header .phones-list li span.custom-icon{
 }
 .kit{
     padding: 10px 60px;
-    margin-top: 10px
+
+    border: 1px solid #eaedef;
 }
 
 .sales-block{
     position: relative;
     margin-bottom: 15px;
+   margin-top: 15px;
 }
 .sales-block > div{
     display: inline-block;
@@ -359,6 +389,7 @@ header .top-header .phones-list li span.custom-icon{
     padding: 30px;
     text-align: center;
     margin-left: 30px;
+    border: 1px solid #eaedef;
 }
 .adv-area span{
     font-size: 16px;
@@ -378,9 +409,15 @@ header .top-header .phones-list li span.custom-icon{
     padding-left: 70px;
 }
 .price-cost{
-    font-size: 20px;
-    margin-left: 29px
+    font-size: 32px;
+    padding-left: 29px;
+    margin: auto;
+    font-family: 'Harmonia_black';
 }
+.price-ico{
+    margin: auto;
+}
+
 .sales{
     text-align: center;
 }
@@ -392,6 +429,7 @@ header .top-header .phones-list li span.custom-icon{
 }
 .subscribe-description:first-child{
     font-size: 18px;
+    font-family: 'Harmonia_bold';
 }
 .subscribe-description:last-child{
     font-family: 'Harmonia_italic';
@@ -401,16 +439,10 @@ header .top-header .phones-list li span.custom-icon{
     width: 100px;
     background-color: #ff5912;
     color: #fff;
+    font-family: 'Harmonia_bold'
 }
 /*MEAIN END*/
 /* FOOTER START*/
-.footer{
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-
-}
 .footer-text{
     font-size: 14px;
     font-family: 'Harmonia_regular';
@@ -479,8 +511,21 @@ header .top-header .phones-list li span.custom-icon{
 }
 .aside-section-title{
     font-family: 'Harmonia_black';
-    font-size: 17px;
+    font-size: 18px;
     color: #ff5912;
     margin-bottom: 35px;
+}
+.aside-section-category ul li{
+    font-size: 16px;
+    font-family: 'Harmonia_semibold';
+}
+.aside-section-category ul li+li{
+    margin-top: 40px;
+}
+.aside-section-category ul li:hover{
+    color: #ff5912;
+}
+.category-wrap .item{
+    margin-bottom: 30px;
 }
 /*category end*/
