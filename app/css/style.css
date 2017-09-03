@@ -552,4 +552,18 @@ header .top-header .phones-list li span.custom-icon{
 .category-wrap .item{
     margin-bottom: 30px;
 }
+.range{
+    margin-top: 40px;
+}
+.min-value, .max-value{
+    position: absolute;
+    top: -150%;
+    font-size: 14px;
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+}
 /*category end*/

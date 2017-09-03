@@ -9,6 +9,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- JQuery UI Style-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
@@ -90,7 +94,26 @@
                            </ul>
                           </div>
                     </div>
-                    <div class="aside-section wite-bg">
+                    <div class="aside-section white-bg">
+                        <p>
+                            <label for="amount">Price range:</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+
+
+                            <div class="range">
+                                <div id="slider-range"></div>
+                                <div class="add-range-value flex-container" >
+                                    <div class="range-input-reoup">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-reoup">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
+                                </div>
+                            </div>
 
                     </div>
                     <div class="aside-section wite-bg">
@@ -525,7 +548,10 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<scritp src="js/plugins.min.js"></scritp>
 </body>
 </html>
