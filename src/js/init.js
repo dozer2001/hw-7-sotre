@@ -9,7 +9,7 @@ $( function() {
             secondhandle =    range.slider( "option" ,"secondhandle").find('.max-value');
 
         $(firsthandle).text(ui.values[ 0 ]+'$' );
-        $(secondhandle).text(ui.values[ 1 ]+'$' );
+        $(secondhandle).text(ui.values[ 1 ]+'$' );1
         fromInput.attr('max', ui.values[ 1 ]);
         toInput.attr('min', ui.values[ 0 ]);
 
@@ -77,3 +77,5 @@ $( function() {
     });
 
 });
+
+
