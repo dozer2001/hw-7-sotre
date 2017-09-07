@@ -76,6 +76,10 @@ $( function() {
         });
     });
 
+    //formstyler init
+    $('.custom-number').styler();
+
+
 });
 
 

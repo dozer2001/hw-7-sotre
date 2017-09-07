@@ -105,7 +105,10 @@ button{
     color: #495662;
     margin-bottom: 70px;
 }
-.checkbox-group input[type=checkbox]{
+.checkbox-group input[type="checkbox"]{
+    display: none;
+}
+.size-radio  input[type="radio"]{
     display: none;
 }
 .checkbox-group label{
@@ -567,3 +570,57 @@ header .top-header .phones-list li span.custom-icon{
     left: 50%;
 }
 /*category end*/
+
+/*product start*/
+.product-wrap{
+    padding: 100px 125px;
+    background-color: #fff;
+}
+.product-carousel{
+    width: 330px;
+}
+.chose-size span{
+    margin-right: 40px;
+}
+.size-radio  input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    color: #34404b;
+    font-family: 'Harmonia_semibold';
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+.order-form{
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+.size-radio label::before{
+    content: "- ";
+    size: 10px;
+}
+.chose-size span{
+    font-size: 18px;
+    font-family: 'Harmonia_semibold';
+}
+.quantity span{
+    font-size: 18px;
+    font-family: 'Harmonia_semibold';
+}
+.jq-number__spin{
+    border: none;
+    background-color: #fff;
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+/*product end*/
