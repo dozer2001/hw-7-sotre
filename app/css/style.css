@@ -615,6 +615,7 @@ header .top-header .phones-list li span.custom-icon{
 .quantity span{
     font-size: 18px;
     font-family: 'Harmonia_semibold';
+    margin-right: 20px;
 }
 .jq-number__spin{
     border: none;
@@ -622,5 +623,9 @@ header .top-header .phones-list li span.custom-icon{
     background: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
+}
+.product-price span{
+    font-size: 20px;
+    font-family: 'Harmonia_black';
 }
 /*product end*/
