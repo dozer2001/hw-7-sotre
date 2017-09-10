@@ -226,6 +226,9 @@ button{
 .item:hover .item-img{
     height: 90px;
 }
+.all-header{
+    background-color: #fff;
+}
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -241,6 +244,8 @@ header .top-header .phones-list li span.custom-icon{
 }
 .bootom-header{
     margin-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #edeff1;
 }
 .header-nav{
     margin-left: 45px;
@@ -603,6 +608,7 @@ header .top-header .phones-list li span.custom-icon{
     padding: 40px 0;
     border-top: 1px solid #edeff1;
     border-bottom: 1px solid #edeff1;
+    margin-top: 40px
 }
 .size-radio label::before{
     content: "- ";
@@ -624,8 +630,67 @@ header .top-header .phones-list li span.custom-icon{
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.product-price{
+    margin: auto auto auto 0px;
+}
+
 .product-price span{
     font-size: 20px;
     font-family: 'Harmonia_black';
+}
+.product-share li{
+    margin: auto;
+    margin-right: 30px;
+}
+.product-title span{
+    font-size: 51px;
+    color: #ff5912;
+    font-family: 'Harmonia_black';
+}
+.product-center-text{
+    margin-top: 30px
+}
+.product-center-text span{
+    font-size: 19px;
+    font-family: 'Harmonia_semibold';
+    margin-top: 30px;
+}
+.product-bottom-text{
+    margin-top: 40px;
+}
+.product-bottom-text p{
+    font-size: 16px;
+    font-family: 'Harmonia_regular';
+}
+.product-bottom-text p+p{
+    margin-top: 17px;
+}
+.product-title-center{
+    margin-bottom: 30px;
+}
+.product-title-center span{
+    font-size: 28px;
+    margin-right: 6px;
+
+}
+.order-now{
+    margin-top: 40px;
+}
+.product-title-center span+span{
+    margin-left: 6px;
+}
+.product-subtitle{
+    font-size: 16px;
+    font-family: 'Harmonia_regular';
+}
+.product-item-img{
+    margin-bottom: 35px;
+}
+.product-item-title span{
+    font-size: 18px;
+    font-family: 'Harmonia_bold';
+}
+.product-item-price{
+    margin-top: 30px;
 }
 /*product end*/
