@@ -156,6 +156,12 @@ button{
 .item:hover .item-price{
     display: none;
 }
+.item-title{
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
 .more-info-on-hover{
     opacity: 0;
     position: absolute;
@@ -201,7 +207,12 @@ button{
 .item:hover .more-info-on-hover{
     opacity: 1;
 }
-.item.item-title{
+@media( max-width: 992px){
+    .item-description, .more-info-on-hover{
+        padding: 0;
+    }
+}
+.item .item-title a{
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -226,9 +237,12 @@ button{
 .item:hover .item-img{
     height: 90px;
 }
-.all-header{
-    background-color: #fff;
+@media (max-width: 1199px){
+    .more-info-on-hover .item-controls li + li{
+        margin-left: 8px;
+    }
 }
+
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -306,6 +320,7 @@ header .top-header .phones-list li span.custom-icon{
 .main-content .content-text span{
     font-size: 18px;
     margin-bottom: 18px;
+    font-family: Harmonia_semibold;
 }
 .main-content .content-text p{
     margin-top: 18px;
@@ -327,10 +342,16 @@ header .top-header .phones-list li span.custom-icon{
 .content-price ul li a:hover{
     color: #ff5912;
 }
+.item-flexslider{
+    position: relative;
+    padding-left: -webkit-calc(8.3333% + 30px);
+    padding-left: calc(8.3333% + 30px);
+}
 .items-carousel{
     min-height: 650px;
-    background: url("../img/content-bg.jpg") no-repeat center / cover;
+    background: url("../img/corusel-bg.jpg") no-repeat center / cover;
     margin-bottom: 60px;
+    background-color: #e2e2e6;
 }
 .item .item-price{
     margin-top: 33px;
@@ -415,6 +436,14 @@ header .top-header .phones-list li span.custom-icon{
     letter-spacing: 1em;
     margin-top: 18px;
 }
+@media (max-width: 999px){
+    .kit{
+        padding: 20px 25px;
+    }
+    .adv-area{
+        margin-left: 0px;
+    }
+}
 .price{
     margin-top: 16px;
     padding-left: 70px;
@@ -425,7 +454,7 @@ header .top-header .phones-list li span.custom-icon{
     margin: auto;
     font-family: 'Harmonia_black';
 }
-.price-ico{
+.price-icon{
     margin: auto;
 }
 
@@ -440,10 +469,18 @@ header .top-header .phones-list li span.custom-icon{
 }
 .jacket-desc{
     margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 .jacket-name{
     font-size: 16px;
     font-family: 'Harmonia_semibold';
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 .item-review{
     margin-top: 35px;
@@ -452,6 +489,40 @@ header .top-header .phones-list li span.custom-icon{
     font-size: 16px;
     font-family: 'Harmonia_semibold';
     color: #ff5912;
+}
+
+.jacket-item:hover{
+    -webkit-box-shadow: 0px 5px 15px 3px rgb( 233, 235, 237);
+            box-shadow: 0px 5px 15px 3px rgb( 233, 235, 237);
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    }
+
+.jacket-desc-hover{
+    display: none;
+}
+
+.jacket-item:hover .jacket-desc-hover{
+        display: block;
+}
+.jacket-item:hover .item-review{
+    display: none;
+}
+.jacket-desc-hover span{
+    margin-right: 10px;
+    margin-top: 27px;
+    width: 22px;
+    height: 21px;
+}
+.jacket-desc-hover a{
+    font-size: 16px;
+    font-family: Harmonia_semibold;
+}
+@media (max-width: 792px){
+    .jacket-item{
+        margin-top: 20px;
+    }
 }
 .star-icon{
     color: #ff5912;

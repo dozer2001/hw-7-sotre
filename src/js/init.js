@@ -75,9 +75,22 @@ $( function() {
             controlNav: "thumbnails"
         });
     });
+    //flexslide home
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+
+    //slick nav init
+    $('.header-nav').slicknav({
+        appendTo: 'header .bootom-header .container .flex-container.justify-sp-between',
+        label: ''
+    });
 
     //formstyler init
     $('.custom-number').styler();
+
 
 
 });
