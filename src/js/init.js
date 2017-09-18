@@ -84,7 +84,7 @@ $( function() {
 
     //slick nav init
     $('.header-nav').slicknav({
-        appendTo: 'header .bootom-header .container .flex-container.justify-sp-between',
+        appendTo: 'header .bootom-header .flex-container.justify-sp-between',
         label: ''
     });
 
