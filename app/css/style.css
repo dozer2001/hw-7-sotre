@@ -134,7 +134,7 @@ button{
 }
 
 .item{
-    background-color: #fff;
+
     padding: 30px 10px;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
@@ -398,14 +398,72 @@ header .top-header .phones-list li span.custom-icon{
 }
 .items-carousel{
     min-height: 650px;
-    background: url("../img/corusel-bg.jpg") no-repeat center / cover;
+    background: url('../img/corusel-bg.jpg') no-repeat center / cover;
     margin-bottom: 60px;
-    background-color: #e2e2e6;
+}
+.item-flexslider .carousel-indicators{
+    width: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: auto;
+    left: 0;
+    margin: 0;
+}
+.item-flexslider .carousel-indicators li{
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    width: 10px;
+    height: 16px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    display: block;
+    margin: 0;
+    border: 0;
+}
+.item-flexslider .carousel-indicators li + li{
+    margin-top: 10px;
+}
+.item-flexslider .carousel-indicators .active{
+    background: #ff5912;
+    height: 36px;
+}
+.item-flexslider .item{
+    height: auto;
+}
+.item-flexslider .carousel{
+    position: static;
 }
 .item .item-price{
     margin-top: 33px;
     font-family: "Harmonia_bold";
     font-size: 18px;
+}
+@media(max-width: 599px){
+    .item-carousel-description .big span{
+        font-size: 30px;
+    }
+    .content-text span{
+        font-size: 15px;
+    }
+    .content-text p{
+        font-size: 13px;
+    }
+    .content-price ul li{
+        font-size: 13px;
+
+    }
+    .content-price{
+        margin-top: 35px;
+    }
+    .items-carousel{
+        min-height: 420px;
+    }
 }
 .load-more{
     background-color: #ffffff;
@@ -465,6 +523,27 @@ header .top-header .phones-list li span.custom-icon{
     position: absolute;
     left:0;
 }
+.same-text{
+    position: absolute;
+    z-index: 99;
+    display: block;
+}
+.same-text span{
+    display: block;
+    -webkit-transform: translateX(23%) translateY(48%);
+        -ms-transform: translateX(23%) translateY(48%);
+            transform: translateX(23%) translateY(48%);
+}
+.same-text span:first-child{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Harmonia_italic;
+}
+.same-text span:last-child{
+    font-size: 21px;
+    color: #FFFFFF;
+    font-family: Harmonia_black;
+}
 .adv-area{
     margin: auto;
     padding: 30px;
@@ -522,10 +601,22 @@ header .top-header .phones-list li span.custom-icon{
 }
 @media(max-width: 499px){
     .sales-block{
-        display: none;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .same-text span{
+        -webkit-transform: translateX(0%) translateY(48%);
+            -ms-transform: translateX(0%) translateY(48%);
+                transform: translateX(0%) translateY(48%)
+    }
+    .sales-block div:last-child{
+        left: auto;
     }
     .full-content{
         padding-left: 10px;
+        margin: 15px 0
     }
     .kit{
         display: block;
@@ -599,6 +690,9 @@ header .top-header .phones-list li span.custom-icon{
     .jacket-item{
         margin-top: 20px;
     }
+    .jacket-price{
+        margin-right: 10px;
+    }
 }
 .star-icon{
     color: #ff5912;
@@ -613,7 +707,8 @@ header .top-header .phones-list li span.custom-icon{
 .subscribe-description:last-child{
     font-family: 'Harmonia_italic';
 }
-@media(max-width: 992px){
+
+@media(max-width: 1199px){
     .subscribe-form{
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
@@ -630,6 +725,23 @@ header .top-header .phones-list li span.custom-icon{
 @media(max-width: 692px){
     .subscribe-description span+span{
         margin-left: 10px;
+    }
+    .subscribe-input-group{
+        margin: auto;
+    }
+}
+@media(max-width: 592px){
+    .subscribe-input-group .subscribe-input{
+        min-width: 50px;
+    }
+}
+@media(max-width: 499px){
+    .form-adapt{
+        display: block;
+        text-align: center
+    }
+    .subscribe-input-group{
+        margin-bottom: 10px;
     }
 }
 .btn{
@@ -749,6 +861,12 @@ header .top-header .phones-list li span.custom-icon{
 .category-wrap{
     padding-top: 120px;
 }
+.mobail-sidebar-btn{
+    font-size: 30px;
+    color: #ff5912;
+    display: none;
+    margin-bottom: 20px;
+}
 .aside-section{
     padding: 40px;
 }
@@ -787,6 +905,55 @@ header .top-header .phones-list li span.custom-icon{
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
+}
+@media(max-width: 991px){
+    .mobail-sidebar-btn{
+        display: inline-block;
+        z-index: 99;
+        position: relative;
+    }
+    .mobail-sidebar-wrap{
+        position: absolute;
+        -webkit-transform: translateX(-110%);
+            -ms-transform: translateX(-110%);
+                transform: translateX(-110%);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        z-index: 99;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, .3);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        z-index: -1;
+    }
+    main.show .mobail-sidebar-wrap{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        left: 0;
+        right: 0;
+    }
+    main.show .overlay{
+        z-index: 98;
+        opacity: 1;
+    }
+    main.show .mobail-sidebar-btn{
+        -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+        -webkit-transition: all .4s linear;
+        -o-transition: all .4s linear;
+        transition: all .4s linear
+    }
 }
 /*category end*/
 
@@ -855,11 +1022,6 @@ header .top-header .phones-list li span.custom-icon{
 .product-share li{
     margin: auto;
     margin-right: 30px;
-}
-.product-title span{
-    font-size: 51px;
-    color: #ff5912;
-    font-family: 'Harmonia_black';
 }
 .product-center-text{
     margin-top: 30px
