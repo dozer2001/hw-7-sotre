@@ -263,6 +263,9 @@ header .top-header .phones-list li span.custom-icon{
     padding-left: 10px;
     font-size: 18px;
 }
+.social-nav a:hover{
+    color: orange;
+}
 .bootom-header{
     margin-top: 50px;
     padding-bottom: 40px;
@@ -274,9 +277,10 @@ header .top-header .phones-list li span.custom-icon{
 .header-icon{
     margin-left: auto;
 }
-.header-icon    ul li+li{
+.header-icon  ul li+li{
     margin-left: 20px;
 }
+
 @media(max-width: 892px){
     .slicknav_menu{
         display: block;
@@ -362,6 +366,7 @@ header .top-header .phones-list li span.custom-icon{
         -ms-flex-align: center;
             align-items: center;
 }
+
 /* HEADER END*/
 
 /* MEIN START*/
@@ -442,6 +447,11 @@ header .top-header .phones-list li span.custom-icon{
     margin-top: 33px;
     font-family: "Harmonia_bold";
     font-size: 18px;
+}
+@media(max-width:  992px){
+    .itim-hide{
+        display: none;
+    }
 }
 @media(max-width: 599px){
     .item-carousel-description .big span{
@@ -753,6 +763,7 @@ header .top-header .phones-list li span.custom-icon{
 
 .range-input-reoup{
     margin-top: 20px;
+    margin-left: 20px;
 }
 #fromValue,#toValue{
     background-color: #e9ebed;
